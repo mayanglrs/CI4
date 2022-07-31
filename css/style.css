@@ -1,4 +1,509 @@
-#login, #register {
-  overflow: none;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+body {
+  font-size: .875rem;
+  font-family: 'Poppins', sans-serif;
+  color: #282828;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #282828;
+  margin-bottom: 12px;
+  text-align: left !important;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 48px 0 0;
+}
+
+.sidebar .iconsax {
+  --Iconsax-Size:18px;
+  --Iconsax-Color:#757575;
+  margin-right: 12px;
+}
+
+.sidebar .icon {
+  margin-right: 12px;
+}
+
+.sidebar .position-sticky {
+  padding-top: 3.25rem;
+}
+
+.sidebar .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #757575;
+}
+
+.sidebar .nav-link:hover {
+  color: #3044C4;
+}
+
+.sidebar .nav-link:hover .iconsax {
+  --Iconsax-Color:#3044C4;
+}
+
+.sidebar .nav-link.active {
+  color: #3044C4;
+  font-weight: 500;
+  border-right: 4px solid #3044C4;
+}
+
+.sidebar-sticky {
+  height: calc(100vh - 48px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+}
+
+.sidebar-right {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  padding: 48px 0 0;
+}
+
+.sidebar-right .nav {
+  margin-top: 56px;
+  padding: 0 2rem;
+}
+
+.sidebar-right .calendar .title {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sidebar-right .calendar .title h2 {
+  font-weight: 500;
+  font-size: 14px;
+  color: #282828;
+  margin-bottom: 0;
+}
+
+.sidebar-right .calendar .title .iconsax {
+  --Iconsax-Size:12px;
+  --Iconsax-Color:#282828 ;
+}
+
+.sidebar-right .calendar .title button {
+  border: none;
+  background: none;
+}
+
+.sidebar-right .calendar .box {
+  width: 100%;
+}
+
+.sidebar-right .calendar .box .item-box,
+.sidebar-right .calendar .box .item-title {
+  width: 14%;
+  padding: 8px 0;
+  text-align: center;
+}
+
+.sidebar-right .calendar .box .item-title {
+  font-size: 11px;
+  color: #AAAAAA;
+}
+
+.sidebar-right .calendar .box .item-box {
+  font-size: 13px;
+  color: #282828;
+}
+
+.sidebar-right .calendar .box .item-box.grey {
+  color: #AAAAAA;
+}
+
+.sidebar-right .calendar .box .item-box.now {
+  background: blue;
+  border-radius: 50%;
+  color: #fff;
+  width: 38px;
+  margin: 0px 7px;
+}
+
+.sidebar-right .agenda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sidebar-right .agenda:not(:first-child) {
+  margin-top: 2rem;
+}
+
+.sidebar-right .agenda h3 {
+  font-weight: 500;
+  font-size: 12px;
+  color: #000000;
+  margin-bottom: 4px;
+}
+
+.sidebar-right .agenda p {
+  font-weight: 500;
+  font-size: 12px;
+  color: #3044C4;
+  margin-bottom: 0px;
+}
+
+.sidebar-right .agenda .iconsax {
+  --Iconsax-Size:30px;
+  --Iconsax-Color:#282828 ;
+}
+
+.navbar-brand {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-brand:hover {
+  color: #282828;
+}
+
+.navbar-brand.col-lg-2 h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  color: #282828;
+  margin-bottom: 0;
+  margin-left: 8px;
+}
+
+.navbar-brand.col-lg-7 h2 {
+  font-weight: 500;
+  font-size: 24px;
+  color: #282828;
+  margin-bottom: 8px;
+}
+
+.navbar-brand.col-lg-7 .icon-hai {
+  width: 26px;
+  margin-left: 8px;
+  margin-top: -8px;
+}
+
+.navbar-brand.col-lg-7 h4 {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #A7A7A7;
+  margin-bottom: 0;
+}
+
+.navbar-brand.col-lg-3.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 32px;
+}
+
+.navbar-brand.col-lg-3.profile img {
+  margin-right: 12px;
+}
+
+.navbar-brand.col-lg-3.profile .iconsax {
+  --Iconsax-Size:20px;
+  --Iconsax-Color:#282828 ;
+}
+
+.navbar-brand.col-lg-3.profile h5 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #282828;
+  margin-bottom: 4px;
+}
+
+.navbar-brand.col-lg-3.profile p {
+  font-weight: 500;
+  font-size: 12px;
+  color: #757575;
+  margin-bottom: 0;
+}
+
+.navbar-brand .icon-header {
+  margin-right: 32px;
+}
+
+.navbar-brand .icon-header .iconsax {
+  --Iconsax-Size:24px;
+  --Iconsax-Color:#282828 
+        ;
+}
+
+.navbar-brand .icon-header img {
+  margin-left: 24px;
+  width: 24px;
+}
+
+.navbar .navbar-toggler {
+  top: .25rem;
+  right: 1rem;
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+}
+
+.nav.nav-end {
+  margin-top: 180px;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  -webkit-box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
+          box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
+}
+
+main .main-content {
+  padding: 0;
+  margin-top: 14px;
+  margin-left: -50px;
+  padding-right: 64px;
+}
+
+main .main-content .card {
+  background-color: #fff;
+  border: 0.5px solid #DEDEDE;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+main .main-content .card:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 4px 15px rgba(207, 207, 207, 0.35);
+          box-shadow: 0px 4px 15px rgba(207, 207, 207, 0.35);
+}
+
+main .main-content .card.status {
+  min-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .main-content .card.status.primary {
+  background-image: url("https://res.cloudinary.com/drpoyuqt1/image/upload/v1659285429/assets/bg-card.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: drop-shadow(0px 4px 15px rgba(25, 29, 115, 0.35));
+          filter: drop-shadow(0px 4px 15px rgba(25, 29, 115, 0.35));
+}
+
+main .main-content .card.status.primary .icon-rounded {
+  background: #6171D8;
+}
+
+main .main-content .card.status.primary .iconsax {
+  --Iconsax-Color:#fff !important;
+}
+
+main .main-content .card.status.primary h4, main .main-content .card.status.primary p {
+  color: #fff !important;
+}
+
+main .main-content .card.progress-task {
+  min-height: 180px;
+}
+
+main .main-content .card.progress-task h4 {
+  font-size: 14px;
+}
+
+main .main-content .card.progress-task .group-progress {
+  margin: 12px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .main-content .card.progress-task .group-progress .progress {
+  width: 80%;
+  height: 4px;
+}
+
+main .main-content .card.progress-task .group-progress span {
+  width: 20%;
+  text-align: center;
+}
+
+main .main-content .card.progress-task .end-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .main-content .card.progress-task .end-card .badge {
+  background: transparent;
+  border-radius: 4px;
+}
+
+main .main-content .card.progress-task .end-card .badge img {
+  margin-right: 2px;
+}
+
+main .main-content .card.progress-task .end-card .badge.red {
+  background: #FFDFDF;
+  color: #D41111;
+}
+
+main .main-content .card.progress-task .end-card .badge.green {
+  background: #D0FFDB;
+  color: #009621;
+}
+
+main .main-content .card.today-task {
+  background: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+main .main-content .card.today-task h1 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #282828;
+  margin-bottom: 0;
+}
+
+main .main-content .card.today-task .num {
+  background-color: #3044C4;
+  border-radius: 50%;
+  padding: 4px 10px;
+  margin-right: 16px;
+  color: #fff;
+  text-align: center;
+}
+
+main .main-content .card.today-task .badge {
+  background: #F5F5F5;
+  color: #757575;
+  padding: 4px 8px;
+}
+
+main .main-content .card .group-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .main-content .card .group-text .icon-rounded {
+  border-radius: 8px;
+  padding: 10px;
+  margin-right: 16px;
+  border: 1px solid #3044C4;
+}
+
+main .main-content .card .group-text .icon-rounded .iconsax {
+  --Iconsax-Size:24px;
+  --Iconsax-Color:#3044C4;
+}
+
+main .main-content .card .group-text .icon-ellipse {
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 16px;
+  border: 1px solid #3044C4;
+}
+
+main .main-content .card .group-text .icon-ellipse .iconsax {
+  --Iconsax-Size:24px;
+  --Iconsax-Color:#3044C4;
+}
+
+main .main-content .card .group-text h4 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 8px;
+  color: #282828;
+}
+
+main .main-content .card .group-text p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 0;
+  color: #282828;
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    top: 5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
