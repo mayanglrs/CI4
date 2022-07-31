@@ -1,0 +1,39 @@
+CRITICAL - 2022-07-24 17:33:53 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 231.
+ 1 SYSTEMPATH\CodeIgniter.php(231): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(189): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(71): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2022-07-24 17:35:55 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 231.
+ 1 SYSTEMPATH\CodeIgniter.php(231): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(189): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(71): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2022-07-24 17:42:38 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 231.
+ 1 SYSTEMPATH\CodeIgniter.php(231): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(189): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(71): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2022-07-24 17:44:40 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 231.
+ 1 SYSTEMPATH\CodeIgniter.php(231): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(189): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(71): CodeIgniter\CodeIgniter->initialize()
+ERROR - 2022-07-24 15:53:16 --> Cannot add or update a child row: a foreign key constraint fails (`weblogin`.`user`, CONSTRAINT `user_ibfk_1` FOREIGN KEY (`id_role`) REFERENCES `role` (`id_role`))
+ERROR - 2022-07-24 15:54:22 --> Cannot add or update a child row: a foreign key constraint fails (`weblogin`.`user`, CONSTRAINT `user_ibfk_1` FOREIGN KEY (`id_role`) REFERENCES `role` (`id_role`))
+ERROR - 2022-07-24 16:00:48 --> Cannot add or update a child row: a foreign key constraint fails (`weblogin`.`user`, CONSTRAINT `user_ibfk_1` FOREIGN KEY (`id_role`) REFERENCES `role` (`id_role`))
+ERROR - 2022-07-24 16:09:13 --> Column 'id_role' cannot be null
+ERROR - 2022-07-24 16:09:15 --> Cannot add or update a child row: a foreign key constraint fails (`weblogin`.`user`, CONSTRAINT `user_ibfk_1` FOREIGN KEY (`id_role`) REFERENCES `role` (`id_role`))
+ERROR - 2022-07-24 16:09:15 --> Cannot add or update a child row: a foreign key constraint fails (`weblogin`.`user`, CONSTRAINT `user_ibfk_1` FOREIGN KEY (`id_role`) REFERENCES `role` (`id_role`))
+ERROR - 2022-07-24 16:09:15 --> Cannot add or update a child row: a foreign key constraint fails (`weblogin`.`user`, CONSTRAINT `user_ibfk_1` FOREIGN KEY (`id_role`) REFERENCES `role` (`id_role`))
+ERROR - 2022-07-24 16:09:16 --> Cannot add or update a child row: a foreign key constraint fails (`weblogin`.`user`, CONSTRAINT `user_ibfk_1` FOREIGN KEY (`id_role`) REFERENCES `role` (`id_role`))
+ERROR - 2022-07-24 16:09:28 --> Cannot add or update a child row: a foreign key constraint fails (`weblogin`.`user`, CONSTRAINT `user_ibfk_1` FOREIGN KEY (`id_role`) REFERENCES `role` (`id_role`))
+ERROR - 2022-07-24 16:45:20 --> Cannot add or update a child row: a foreign key constraint fails (`weblogin`.`user`, CONSTRAINT `user_ibfk_1` FOREIGN KEY (`id_role`) REFERENCES `role` (`id_role`))
+CRITICAL - 2022-07-24 18:36:18 --> Invalid file: pegawai/halaman_pegawai.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pegawai/halaman_pegawai.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pegawai/halaman_pegawai', [], true)
+ 3 APPPATH\Controllers\Home.php(69): view('pegawai/halaman_pegawai')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
