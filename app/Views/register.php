@@ -7,12 +7,13 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="<?=base_url('/public/Assets/css/bootstrap.min.css');?>">
+    <link rel="stylesheet" href="<?=base_url('/public/Assets/scss/login.css');?>">
 
-    <title>Hello, world!</title>
+    <title>Register</title>
   </head>
-  <body class="bg-dark"> 
+  <body id="first-page"> 
     <div class="container">
-        <div class="row justify-content-center m-5 " >
+        <div class="row justify-content-center m-auto">
             <div class="col-4 m-5">
                <div class="card p-3">
                    <h3 class="text-center">DAFTAR</h3>

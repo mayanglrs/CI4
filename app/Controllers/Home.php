@@ -19,6 +19,11 @@ class Home extends BaseController
     {
         return view('register');
     }
+    public function logout(){
+        return view('login');
+        // $this->session->destroy();
+        // return redirect()->to(base_url("/"));
+    }
     public function insert_user()
     {
         $user = $this->request->getPost('user');
@@ -69,10 +74,5 @@ class Home extends BaseController
                 return view('/halaman_pegawai');
             }
         }
-    }
-
-    public function logout(){
-        $this->session->destroy();
-        return redirect()->to(base_url("/"));
     }
 }
